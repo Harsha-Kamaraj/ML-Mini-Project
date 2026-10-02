@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Kolkata",
+  "notebook": "musical_genre_replication.ipynb",
+  "notebook_cells": 35,
+  "code_cells": 17,
+  "fresh_kernel_sequential_execution": "passed",
+  "checkpoint_reuse_rerun": "passed",
+  "mode": "smoke",
+  "full_experimental_training_executed": false,
+  "test_evaluated": false,
+  "dataset_selected_recordings": 400,
+  "input_shape": [
+    8000,
+    500
+  ],
+  "split_sizes": [
+    6000,
+    1000,
+    1000
+  ],
+  "seed": 2026,
+  "fit_examples": 256,
+  "validation_selection_examples": 128,
+  "epochs_per_model": 1,
+  "run_directory": "artifacts/notebook/smoke/26ec28f80802fd19",
+  "checks": [
+    "nbformat schema",
+    "all code cells parsed",
+    "all 17 code cells executed without errors",
+    "native waveform and real pooling checks",
+    "labels/counts/segment boundaries",
+    "split uniqueness and recording/content overlap",
+    "model output dimensions",
+    "sum-dimensions mean-batch reconstruction loss",
+    "uniform logits cross-entropy",
+    "finite gradients and a real training update",
+    "joint encoder/classifier gradient flow",
+    "joint loss reconciliation",
+    "evaluation mode repeatability",
+    "checkpoint integrity and reload",
+    "training-only PCA fit with validation transform",
+    "held-out validation prediction",
+    "reference PDF SHA256 unchanged"
+  ],
+  "versions": {
+    "numpy": "2.4.4",
+    "soundfile": "0.13.1",
+    "torch": "2.14.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "pandas": "3.0.6",
+    "ipykernel": "7.4.0",
+    "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "libsndfile": "1.2.2"
+  }
+}

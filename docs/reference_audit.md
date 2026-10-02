@@ -42,7 +42,7 @@ The [vanilla AE main](https://github.com/arjunsawknee/Genre-Extraction/blob/00b1
 | Duration | Baseline/joint 200 epochs; vanilla AE 400; paper plot reaches about 500 |
 | Shared settings | Adam, lr 0.0001, batch 512; short final batch retained; no explicit seed |
 
-Decoder ReLU prevents negative reconstruction of signed waveforms. Using it preserves source behavior; replacing it with a linear output is a consequential new choice. Document this before Phase 4. No model choice has been implemented. Prefer paper keep probability 0.9, source-informed placement/activation/initialization where appropriate, and an explicitly agreed training budget; do not infer a universal 500-epoch rule from a plot.
+Decoder ReLU prevents negative reconstruction of signed waveforms. The complete notebook now retains it, documents the limitation, and preserves source activation/initialization/dropout placement while using paper keep probability 0.9. Full training budgets are the source's 200 baseline / 400 AE / 200 joint epochs, explicitly distinguished from the paper's displayed ~500-epoch curve. Minimum validation objective selects the checkpoint. Only smoke training has executed; replacing decoder output with linear would be a separate documented deviation.
 
 ### Loss conflict
 
@@ -58,6 +58,6 @@ The source divides reconstruction by 500 and omits the 0.9 coefficient. Relative
 
 ## Approved waveform decision and remaining choices
 
-On 2026-10-02, Harsha explicitly selected the code-backed policy: twenty consecutive 20,000-sample chunks per recording with group-of-40 averaging, labeled approximately 0.907 seconds at 22,050 Hz. Alternative literal seconds resampled to 20 kHz, or 22,050-to-500 variable-width pooling, would introduce preprocessing absent from inspected source and were not selected. Approval resolves the waveform/count interpretation, but does not authorize advancing past the requested Phase 1 pause. No preprocessing has been implemented.
+On 2026-10-02, Harsha explicitly selected the code-backed policy: twenty consecutive 20,000-sample chunks per recording with group-of-40 averaging, labeled approximately 0.907 seconds at 22,050 Hz. Alternative literal seconds resampled to 20 kHz, or 22,050-to-500 variable-width pooling, would introduce preprocessing absent from inspected source and were not selected. The later complete-notebook request superseded the initial Phase 1 pause. Notebook preprocessing has now executed on 400 valid AU recordings, yielding verified 8,000 × 500 inputs.
 
-Paper loss/split/dropout precedence is already supported by the user's instructions. Missing seed, initialization/defaults and exact durations will be stated explicitly when their phase is authorized. No published metrics are acceptance targets.
+Paper loss/split/dropout precedence is supported by the user's instructions. Notebook seed 2026, source-derived initialization/activations/epoch budgets, explicit Adam defaults and validation checkpoint selection are documented implementation choices. No published metrics are acceptance targets. The actual paper run's original split membership and complete protocol remain unrecoverable.

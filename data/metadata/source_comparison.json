@@ -1,0 +1,13 @@
+{
+  "compared_selected_recordings": 400,
+  "exact_matches": 399,
+  "differences": [],
+  "unreadable_wav": [
+    {
+      "recording_id": "jazz.00054",
+      "wav_readable": false,
+      "exact_decoded_match": null,
+      "au_frames": 662112
+    }
+  ]
+}

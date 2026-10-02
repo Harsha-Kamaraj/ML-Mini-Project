@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-02T13:37:20.744628+00:00",
+  "root": "/Users/harshak/Documents/GitHub/ML-Mini-Project/data/raw/gtzan_qiuqiangkong",
+  "status": "passed_with_warnings",
+  "scope": "Full native audio decode; no exclusions, segmentation, pooling, or splits.",
+  "recording_id_rule": "genre + '.' + filename stem after removing an existing matching genre prefix",
+  "selected_genres": [
+    "classical",
+    "jazz",
+    "metal",
+    "pop"
+  ],
+  "expected_selected_recordings": 400,
+  "total_audio_files": 1000,
+  "selected_audio_files": 400,
+  "decode_status_counts": {
+    "ok": 1000
+  },
+  "sample_rate_counts": {
+    "22050": 1000
+  },
+  "channel_counts": {
+    "1": 1000
+  },
+  "duration_seconds": {
+    "count": 1000,
+    "min": 29.931972789115648,
+    "median": 30.013333333333332,
+    "max": 30.648888888888887
+  },
+  "by_genre": {
+    "blues": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.013333333333332,
+        "median": 30.013333333333332,
+        "max": 30.013333333333332
+      }
+    },
+    "classical": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.992925170068027,
+        "median": 30.013333333333332,
+        "max": 30.488979591836735
+      }
+    },
+    "country": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.98185941043084,
+        "median": 30.013333333333332,
+        "max": 30.370975056689343
+      }
+    },
+    "disco": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.992925170068027,
+        "median": 30.00018140589569,
+        "max": 30.301133786848073
+      }
+    },
+    "hiphop": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.931972789115648,
+        "median": 30.013333333333332,
+        "max": 30.648888888888887
+      }
+    },
+    "jazz": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.00798185941043,
+        "median": 30.013333333333332,
+        "max": 30.480725623582767
+      }
+    },
+    "metal": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.00018140589569,
+        "median": 30.00018140589569,
+        "max": 30.013333333333332
+      }
+    },
+    "pop": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.00018140589569,
+        "median": 30.00018140589569,
+        "max": 30.00018140589569
+      }
+    },
+    "reggae": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.00018140589569,
+        "median": 30.00018140589569,
+        "max": 30.013333333333332
+      }
+    },
+    "rock": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.995827664399094,
+        "median": 30.013333333333332,
+        "max": 30.400907029478457
+      }
+    }
+  },
+  "hard_failures": [],
+  "anomaly_counts": {
+    "duplicate_file_bytes": 14
+  },
+  "anomaly_files": [
+    {
+      "relative_path": "genres/disco/disco.00098.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/disco/disco.00099.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/hiphop/hiphop.00076.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/hiphop/hiphop.00078.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00034.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00058.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00094.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00054.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00060.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00067.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00071.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/reggae/reggae.00081.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/reggae/reggae.00082.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/rock/rock.00016.au",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    }
+  ],
+  "duplicate_recording_ids": {},
+  "duplicate_file_sha256": {
+    "5e4d268f41d3d02547873545b25d59bfb388e690fdc988b46ceace7befcf5780": [
+      "genres/disco/disco.00098.au",
+      "genres/disco/disco.00099.au"
+    ],
+    "72f7cf5d9ee5674d428e4aac9ccee4b135afbd224113c5cd8f8ddedaf91650f1": [
+      "genres/hiphop/hiphop.00076.au",
+      "genres/hiphop/hiphop.00078.au"
+    ],
+    "ead9738a211b6f777f1bd4094a018c38677fae0f80f3a9c9c3de51c4f08f3aac": [
+      "genres/metal/metal.00034.au",
+      "genres/metal/metal.00094.au"
+    ],
+    "6eb4d4039a74d64810521468a2e96ae113e971859bfdb34f4679351230ad7212": [
+      "genres/metal/metal.00058.au",
+      "genres/rock/rock.00016.au"
+    ],
+    "44e37d5d3d8e7b42ad6053b46f30cfe9d8d1a205c6e2fbe52c6f3b7c6313cc5f": [
+      "genres/pop/pop.00054.au",
+      "genres/pop/pop.00060.au"
+    ],
+    "15c1eeba0a76971acd36208e7d45b2f560545b876972cfdeed14fffab7c04278": [
+      "genres/pop/pop.00067.au",
+      "genres/pop/pop.00071.au"
+    ],
+    "675589962dccc1b4451425061b98edf5db56ef6fe1cadf038bd818e36ed1d48e": [
+      "genres/reggae/reggae.00081.au",
+      "genres/reggae/reggae.00082.au"
+    ]
+  },
+  "ignored_non_audio_files": [],
+  "thresholds": {
+    "expected_sample_rate": 22050,
+    "expected_channels": 1,
+    "ordinary_duration_seconds_inclusive": [
+      29,
+      31
+    ],
+    "out_of_range_absolute_peak_gt": 1.000001,
+    "near_silence_rms_lt": 1e-06,
+    "mostly_zero_fraction_gt": 0.99,
+    "near_full_scale_absolute_amplitude_gte": 0.9999,
+    "frequent_near_full_scale_fraction_gte": 0.01
+  },
+  "statistics_note": "All channels; normalized float32 decoder output. Amplitude statistics use finite decoded samples only; nonfinite counts are explicit. Duration is from header frames. Partial decoding is retained and marked failed.",
+  "limitations": "Byte hashes detect exact duplicate files only. This audit cannot certify genre labels, distinct performances, absence of corruption that still decodes, or absence of data leakage.",
+  "versions": {
+    "numpy": "2.4.4",
+    "soundfile": "0.13.1",
+    "libsndfile": "1.2.2"
+  },
+  "total_discovered_files": 1000,
+  "appledouble_metadata_count": 0,
+  "appledouble_metadata_files": [],
+  "appledouble_classification_rule": "Filename starts with ._ AND first four bytes are 0x00051607. Preserved as metadata; not a recording or an audio exclusion.",
+  "unverified_appledouble_candidates": [],
+  "waveform_representatives": {
+    "classical": {
+      "relative_path": "genres/classical/classical.00000.au",
+      "recording_id": "classical.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    },
+    "jazz": {
+      "relative_path": "genres/jazz/jazz.00000.au",
+      "recording_id": "jazz.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    },
+    "metal": {
+      "relative_path": "genres/metal/metal.00000.au",
+      "recording_id": "metal.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    },
+    "pop": {
+      "relative_path": "genres/pop/pop.00000.au",
+      "recording_id": "pop.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    }
+  }
+}

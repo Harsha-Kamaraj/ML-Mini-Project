@@ -6,12 +6,40 @@ waveforms. See [plan.md](plan.md) for source-specific requirements, balanced tas
 ownership, approved choices, evidence, and phase checkpoints; see the
 [reference audit](docs/reference_audit.md) for paper/poster/author-code conflicts.
 
-Current scope: reference review and dataset inspection only. No preprocessing,
-models, training, or reproduced metrics have been implemented. The intended
-implementation uses Python and PyTorch; training packages will be added in their
-phase. References and any synced `sources/` directory are read-only.
+The complete implementation is in
+[musical_genre_replication.ipynb](musical_genre_replication.ipynb). All project logic
+is inside the notebook: acquisition, verification, preprocessing, shared splits,
+three PyTorch models, training, checkpoint loading, evaluation, PCA, and a demo.
+It does not import the earlier standalone inspection scripts, which are preserved.
+References and any synced `sources/` directory remain read-only.
 
-## Inspection setup
+## Start the notebook in VS Code
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-notebook.txt
+```
+
+Open the notebook and select `.venv/bin/python` as the kernel (Windows:
+`.venv\Scripts\python.exe`). Run cells in order. Dependencies can also be installed
+from the package list inside the notebook; the requirements file is optional.
+
+The default `CFG["mode"] = "smoke"` runs one epoch per model on 256 training and
+128 validation examples, checks the complete workflow, and leaves test unevaluated.
+These are real executed diagnostics, **not full reproduction results**. To train
+the full experiments use `mode="full"` (200 baseline, 400 AE, 200 joint epochs).
+Keep `evaluate_test=False` until choices are fixed; then set it true and rerun
+with checkpoint reuse enabled. Full runs and smoke runs use separate directories.
+
+The default dataset is the separately preserved AU archive in
+`data/raw/gtzan_qiuqiangkong/`: **1,000/1,000 recordings decode, including all
+400 selected recordings**. Download/source links, checksums and the comparison
+with the earlier failed WAV mirror are in the notebook and
+[dataset provenance](docs/dataset.md). It creates 8,000 × 500 inputs and preserves
+recording/segment metadata and split indices. Caches, checkpoints and figures go
+under Git-ignored `artifacts/notebook/`.
+
+## Earlier standalone inspection setup (optional)
 
 Run from the repository root. Python 3.12+ is required by the extraction script;
 the executed inspection environment is Python 3.14.6 on macOS arm64. The minimal
@@ -26,7 +54,7 @@ python3 -m venv .venv
 Expected: imports for NumPy/SoundFile work and pip reports no broken requirements.
 Audio remains in its native format, sample rate, and channel count during inspection.
 
-## Obtain the audio
+## Earlier WAV mirror acquisition (optional; known unreadable file)
 
 Source: [Marsyas GTZAN audio mirror on Hugging Face](https://huggingface.co/datasets/marsyas/gtzan).
 This is the Genre Collection audio archive. No Hugging Face login or dataset loader
@@ -60,7 +88,7 @@ URL above as `data/downloads/genres.tar.gz` and run that command. If using an
 existing dataset elsewhere, pass its directory to `--root` below; do not copy
 feature CSVs or spectrogram images as substitutes for audio.
 
-## Verify raw recordings
+## Verify the earlier WAV mirror
 
 ```bash
 .venv/bin/python scripts/inventory_gtzan.py \
@@ -89,10 +117,13 @@ Keep code, requirements, documentation and lightweight manifests in Git. Do not
 publish the dataset with the source repository. Repository privacy and faculty
 access remain to be verified as required by the assignment.
 
-## Next phase
+## Reproduction policy and remaining work
 
 The user approved twenty consecutive 20,000-sample chunks per recording, pooled
 in groups of 40. At 22,050 Hz these are approximately 0.907-second clips, an
-explicit interpretation based on author code. Phase 2 still requires the user's
-continuation and resolution of the unreadable recording. Main split sizes and
-loss/dropout settings will follow the paper; source-code conflicts are documented.
+explicit interpretation based on author code. The complete notebook now implements
+this approved policy and uses the fully readable AU source. Main split sizes and
+loss/dropout settings follow the paper; source-code conflicts are documented.
+Full experimental training/test evaluation, human review, the final PDF/slides,
+faculty repository access, and demonstration rehearsal remain outstanding. The
+assignment's one-page/two-page contradiction still needs faculty clarification.
