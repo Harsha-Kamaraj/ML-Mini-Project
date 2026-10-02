@@ -1,0 +1,38 @@
+# Immutable local data and downloaded archives; lightweight metadata is tracked.
+data/raw/
+data/downloads/
+data/processed/
+data/interim/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.wav
+*.au
+*.mp3
+*.flac
+
+# Environments, caches, machine-local configuration.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+tmp/
+
+# Large experiment artifacts; keep curated metrics/configuration separately.
+artifacts/
+checkpoints/
+runs/
+*.pt
+*.pth
+*.npy
+*.npz
+

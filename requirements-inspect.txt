@@ -1,0 +1,6 @@
+# Minimal Phase 1 dependencies. Training dependencies are intentionally deferred.
+numpy==2.4.4
+soundfile==0.13.1
+# Transitive dependencies pinned from the verified macOS arm64 environment.
+cffi==2.1.1
+pycparser==3.0

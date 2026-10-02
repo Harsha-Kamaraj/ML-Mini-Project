@@ -1,0 +1,5630 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-02T06:14:26.533858+00:00",
+  "root": "/Users/harshak/Documents/GitHub/ML-Mini-Project/data/raw/gtzan",
+  "status": "failed",
+  "scope": "Full native audio decode; no exclusions, segmentation, pooling, or splits.",
+  "recording_id_rule": "genre + '.' + filename stem after removing an existing matching genre prefix",
+  "selected_genres": [
+    "classical",
+    "jazz",
+    "metal",
+    "pop"
+  ],
+  "expected_selected_recordings": 400,
+  "total_audio_files": 1000,
+  "selected_audio_files": 400,
+  "decode_status_counts": {
+    "ok": 999,
+    "failed": 1
+  },
+  "sample_rate_counts": {
+    "22050": 999,
+    "None": 1
+  },
+  "channel_counts": {
+    "1": 999,
+    "None": 1
+  },
+  "duration_seconds": {
+    "count": 999,
+    "min": 29.931972789115648,
+    "median": 30.013333333333332,
+    "max": 30.648888888888887
+  },
+  "by_genre": {
+    "blues": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.013333333333332,
+        "median": 30.013333333333332,
+        "max": 30.013333333333332
+      }
+    },
+    "classical": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.992925170068027,
+        "median": 30.013333333333332,
+        "max": 30.488979591836735
+      }
+    },
+    "country": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.98185941043084,
+        "median": 30.013333333333332,
+        "max": 30.370975056689343
+      }
+    },
+    "disco": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.992925170068027,
+        "median": 30.00018140589569,
+        "max": 30.301133786848073
+      }
+    },
+    "hiphop": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.931972789115648,
+        "median": 30.013333333333332,
+        "max": 30.648888888888887
+      }
+    },
+    "jazz": {
+      "files_found": 100,
+      "decoded_ok": 99,
+      "decode_failures": 1,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 99,
+        "None": 1
+      },
+      "channel_counts": {
+        "1": 99,
+        "None": 1
+      },
+      "duration_seconds": {
+        "count": 99,
+        "min": 30.00798185941043,
+        "median": 30.013333333333332,
+        "max": 30.480725623582767
+      }
+    },
+    "metal": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.00018140589569,
+        "median": 30.00018140589569,
+        "max": 30.013333333333332
+      }
+    },
+    "pop": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.00018140589569,
+        "median": 30.00018140589569,
+        "max": 30.00018140589569
+      }
+    },
+    "reggae": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 30.00018140589569,
+        "median": 30.00018140589569,
+        "max": 30.013333333333332
+      }
+    },
+    "rock": {
+      "files_found": 100,
+      "decoded_ok": 100,
+      "decode_failures": 0,
+      "expected_count": 100,
+      "missing_expected_ids": [],
+      "unexpected_ids": [],
+      "sample_rates": {
+        "22050": 100
+      },
+      "channel_counts": {
+        "1": 100
+      },
+      "duration_seconds": {
+        "count": 100,
+        "min": 29.995827664399094,
+        "median": 30.013333333333332,
+        "max": 30.400907029478457
+      }
+    }
+  },
+  "hard_failures": [
+    "genres/jazz/jazz.00054.wav: decode_status=failed"
+  ],
+  "anomaly_counts": {
+    "duplicate_file_bytes": 28
+  },
+  "anomaly_files": [
+    {
+      "relative_path": "genres/disco/disco.00098.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/disco/disco.00099.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/hiphop/hiphop.00039.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/hiphop/hiphop.00045.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/hiphop/hiphop.00076.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/hiphop/hiphop.00078.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/jazz/jazz.00054.wav",
+      "anomalies": [],
+      "error": "LibsndfileError: Error opening '/Users/harshak/Documents/GitHub/ML-Mini-Project/data/raw/gtzan/genres/jazz/jazz.00054.wav': Error : bad data offset."
+    },
+    {
+      "relative_path": "genres/metal/metal.00034.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00040.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00041.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00042.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00043.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00044.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00045.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00058.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00061.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00062.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00063.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00064.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00065.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00066.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/metal/metal.00094.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00054.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00060.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00067.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/pop/pop.00071.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/reggae/reggae.00081.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/reggae/reggae.00082.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    },
+    {
+      "relative_path": "genres/rock/rock.00016.wav",
+      "anomalies": [
+        "duplicate_file_bytes"
+      ],
+      "error": ""
+    }
+  ],
+  "duplicate_recording_ids": {},
+  "duplicate_file_sha256": {
+    "3496655d22b1ea1efd55457192b5a78547e71c868dc952dccef883191569804f": [
+      "genres/disco/disco.00098.wav",
+      "genres/disco/disco.00099.wav"
+    ],
+    "f6e83c68d87414dd6bb5463cba622b005c6f0becadddeb61ac988d2ff2af0685": [
+      "genres/hiphop/hiphop.00039.wav",
+      "genres/hiphop/hiphop.00045.wav"
+    ],
+    "44fd895ac99797974552a10640f9be9d11742f536ed87ef19d0329834a48d41a": [
+      "genres/hiphop/hiphop.00076.wav",
+      "genres/hiphop/hiphop.00078.wav"
+    ],
+    "d15db60c6d1f784d0fa837d150c9ea536115ae03983d820d3c97a8d9e7f8ed3f": [
+      "genres/metal/metal.00034.wav",
+      "genres/metal/metal.00094.wav"
+    ],
+    "e73f27709990c875796c260f6900b3bfd60824f09d581638b3fad8a52dbacbbd": [
+      "genres/metal/metal.00040.wav",
+      "genres/metal/metal.00061.wav"
+    ],
+    "d154129cb75855326d94b47cc1aae0e460187b452494aad895514d445f362a22": [
+      "genres/metal/metal.00041.wav",
+      "genres/metal/metal.00062.wav"
+    ],
+    "903b6ec068ed2186a45fdb6b2fe2e54b48980a7b03487bf20cbaae39b34ecbf8": [
+      "genres/metal/metal.00042.wav",
+      "genres/metal/metal.00063.wav"
+    ],
+    "b208f62da73a46e53b196e4997303269d6a93769b84bc5d1752627d0991b08f2": [
+      "genres/metal/metal.00043.wav",
+      "genres/metal/metal.00064.wav"
+    ],
+    "d7a7a94ac76dd141c4a99aef660336f48a6e504562a8972116cd0518eb87ee44": [
+      "genres/metal/metal.00044.wav",
+      "genres/metal/metal.00065.wav"
+    ],
+    "4de67c0fd52ad616a56a790916ab2a895893cde730d916b935b4b07e1fcae2a0": [
+      "genres/metal/metal.00045.wav",
+      "genres/metal/metal.00066.wav"
+    ],
+    "56e2b93b263a1f29ced0090d615d40755e9dc19b8066234355cfbb4ffcc2f019": [
+      "genres/metal/metal.00058.wav",
+      "genres/rock/rock.00016.wav"
+    ],
+    "b1ce65d61443db6d5a7821490332b1f71c6597fbdd37e87ee2acdbcd882d8aa0": [
+      "genres/pop/pop.00054.wav",
+      "genres/pop/pop.00060.wav"
+    ],
+    "2301f6e86dfd5bb4d58cf5bd6bacdf1a1c6e3aa727dfd366afd85c7d63aad8bf": [
+      "genres/pop/pop.00067.wav",
+      "genres/pop/pop.00071.wav"
+    ],
+    "f5bbaba83167c97f12dd477fadf436f1e32b4279efad43cf4771770a46f4857b": [
+      "genres/reggae/reggae.00081.wav",
+      "genres/reggae/reggae.00082.wav"
+    ]
+  },
+  "ignored_non_audio_files": [
+    "genres/.DS_Store"
+  ],
+  "thresholds": {
+    "expected_sample_rate": 22050,
+    "expected_channels": 1,
+    "ordinary_duration_seconds_inclusive": [
+      29,
+      31
+    ],
+    "out_of_range_absolute_peak_gt": 1.000001,
+    "near_silence_rms_lt": 1e-06,
+    "mostly_zero_fraction_gt": 0.99,
+    "near_full_scale_absolute_amplitude_gte": 0.9999,
+    "frequent_near_full_scale_fraction_gte": 0.01
+  },
+  "statistics_note": "All channels; normalized float32 decoder output. Amplitude statistics use finite decoded samples only; nonfinite counts are explicit. Duration is from header frames. Partial decoding is retained and marked failed.",
+  "limitations": "Byte hashes detect exact duplicate files only. This audit cannot certify genre labels, distinct performances, absence of corruption that still decodes, or absence of data leakage.",
+  "versions": {
+    "numpy": "2.4.4",
+    "soundfile": "0.13.1",
+    "libsndfile": "1.2.2"
+  },
+  "total_discovered_files": 2013,
+  "appledouble_metadata_count": 1012,
+  "appledouble_metadata_files": [
+    {
+      "relative_path": "._genres",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._.DS_Store",
+      "header_magic_hex": "00051607",
+      "file_bytes": 120
+    },
+    {
+      "relative_path": "genres/._blues",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._classical",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._country",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._disco",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._hiphop",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._jazz",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._metal",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._pop",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._reggae",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/._rock",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/blues/._blues.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/classical/._classical.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/country/._country.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/disco/._disco.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/hiphop/._hiphop.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/jazz/._jazz.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/metal/._metal.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/pop/._pop.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/reggae/._reggae.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00000.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00001.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00002.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00003.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00004.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00005.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00006.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00007.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00008.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00009.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00010.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00011.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00012.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00013.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00014.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00015.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00016.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00017.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00018.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00019.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00020.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00021.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00022.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00023.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00024.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00025.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00026.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00027.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00028.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00029.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00030.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00031.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00032.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00033.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00034.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00035.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00036.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00037.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00038.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00039.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00040.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00041.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00042.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00043.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00044.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00045.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00046.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00047.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00048.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00049.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00050.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00051.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00052.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00053.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00054.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00055.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00056.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00057.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00058.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00059.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00060.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00061.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00062.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00063.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00064.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00065.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00066.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00067.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00068.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00069.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00070.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00071.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00072.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00073.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00074.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00075.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00076.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00077.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00078.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00079.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00080.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00081.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00082.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00083.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00084.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00085.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00086.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00087.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00088.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00089.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00090.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00091.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00092.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00093.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00094.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00095.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00096.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00097.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00098.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    },
+    {
+      "relative_path": "genres/rock/._rock.00099.wav",
+      "header_magic_hex": "00051607",
+      "file_bytes": 211
+    }
+  ],
+  "appledouble_classification_rule": "Filename starts with ._ AND first four bytes are 0x00051607. Preserved as metadata; not a recording or an audio exclusion.",
+  "unverified_appledouble_candidates": [],
+  "waveform_representatives": {
+    "classical": {
+      "relative_path": "genres/classical/classical.00000.wav",
+      "recording_id": "classical.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    },
+    "jazz": {
+      "relative_path": "genres/jazz/jazz.00000.wav",
+      "recording_id": "jazz.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    },
+    "metal": {
+      "relative_path": "genres/metal/metal.00000.wav",
+      "recording_id": "metal.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    },
+    "pop": {
+      "relative_path": "genres/pop/pop.00000.wav",
+      "recording_id": "pop.00000",
+      "start_frame": 0,
+      "end_frame_exclusive": 1102,
+      "channel_shown": 1,
+      "sample_rate": 22050
+    }
+  }
+}
