@@ -202,3 +202,33 @@ All three models passed output-shape, finite loss/gradient, real training-step a
 Commands to reproduce: install `requirements-notebook.txt` into `.venv`, open the notebook in VS Code, select that environment, and Run All with default `mode="smoke"`. Expected: all checks complete, outputs explicitly labeled smoke, checkpoint reuse on rerun, and “Test set remains unevaluated.” Existing standalone audit tests: `.venv/bin/python -m unittest discover -s tests -v` (six pass). Git ignores datasets, archives, virtual environment, caches and checkpoints; only lightweight metadata/code/notebook/docs should be committed.
 
 Next review: inspect notebook phases and choose when to execute full-budget training (`mode="full"`, initially `evaluate_test=False`). After validation decisions are fixed, enable test evaluation with saved checkpoints. Remaining assignment items: faculty write-up-length clarification, full results, PDF/slides, private-repository/faculty-access verification, and both members’ actual contribution/rehearsal evidence. No additional recording-disjoint experiment has run.
+
+## Improvement plan (agreed 2026-10-06)
+
+Goal: build on the reproduction ([musical_genre_paper_reproduction.ipynb](musical_genre_paper_reproduction.ipynb)) to improve on its results and on the paper's. Code goes in the same notebook, as Part 2 below the reproduction (Part 1, left unchanged as the reference). Part 2 reuses Part 1's data, split, training and evaluation code. A final section compares the paper (quoted), the reproduction and every improved model in one table. Trained models and results are cached, with a flag to reload them instead of retraining, so Run All stays fast for the demo.
+
+**Limitations measured in the reproduction:**
+- the decoder's ReLU output dies, so reconstruction adds no gradient;
+- pooling by 40 keeps only content below about 275 Hz;
+- only the first 18 s of each 30 s song is used;
+- there is no input scaling, no reshuffling between epochs, and no checkpoint selection;
+- fully connected layers treat each time position separately.
+
+**Decisions:**
+- **Input:** the main results use raw audio; a log-mel spectrogram model is reported as a clearly labelled extra.
+- **Evaluation:** report on two splits. The paper's random clip split (6,000/1,000/1,000, seeds 0–4) gives a fair comparison with the paper. A song-disjoint split, where no song is in more than one partition, tests generalisation to unseen songs.
+
+**Protocol:**
+- Make all choices on dev and open test once per final model.
+- Report mean ± std over 5 seeds, plus song-level majority-vote accuracy.
+- Each step is an ablation over the previous one.
+- For the best model, produce Tables 1–2, the confusion matrix and the PCA figures.
+
+| Step | Change |
+|---|---|
+| 1 | Fix the Deep Softmax AE: linear decoder output, input standardisation, per-epoch reshuffling, best-dev checkpoint, re-tuned γ |
+| 2 | Keep more of the signal: smaller pooling, use all 30 s of each song |
+| 3 | Convolutional Deep Softmax AE on raw waveform (main contribution): 1-D CNN encoder/decoder, 64-dim bottleneck, softmax head, Eq. 3 loss |
+| 4 | Extra: log-mel spectrogram CNN (the paper's future work) |
+
+Deadline: deliverables due 2026-10-10 23:59. Code first (Steps 1–3, then 4), then write-up, slides and demo.

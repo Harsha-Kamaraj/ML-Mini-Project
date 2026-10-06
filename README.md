@@ -13,6 +13,16 @@ three PyTorch models, training, checkpoint loading, evaluation, PCA, and a demo.
 It does not import the earlier standalone inspection scripts, which are preserved.
 References and any synced `sources/` directory remain read-only.
 
+[musical_genre_paper_reproduction.ipynb](musical_genre_paper_reproduction.ipynb) contains both parts of the project:
+- **Part 1 — Paper reproduction.** It follows the paper text first, uses the authors' linked code only where the
+  paper gives no value, and documents the source of every setting. Outputs go to `artifacts/paper_reproduction/`.
+- **Part 2 — Improvements.** Fixed, wider-input, convolutional (raw audio) and mel-spectrogram Deep Softmax
+  Autoencoders, each evaluated over 5 seeds on the paper's clip split and on a song-disjoint split. It ends with one
+  comparison table for all models. Trained models and results are cached in `artifacts/improvements/`.
+
+Run All takes about 4 minutes when the Part 2 cache exists. With an empty cache, or with `RETRAIN = True`, training
+Part 2 from scratch takes about 2–3 hours on a laptop CPU.
+
 ## Start the notebook in VS Code
 
 ```bash
