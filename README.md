@@ -1,139 +1,110 @@
-# ML-Mini-Project
-Latent Feature Extraction for Musical Genres from Raw Audio
+# ML-Mini-Project — Latent Feature Extraction for Musical Genres from Raw Audio
 
-Team: Harsha and Sunil. This project reproduces the supplied paper with raw GTZAN
-waveforms. See [plan.md](plan.md) for source-specific requirements, balanced task
-ownership, approved choices, evidence, and phase checkpoints; see the
-[reference audit](docs/reference_audit.md) for paper/poster/author-code conflicts.
+Team: Harsha and Sunil (UE24CS352A Machine Learning mini-project).
 
-The complete implementation is in
-[musical_genre_replication.ipynb](musical_genre_replication.ipynb). All project logic
-is inside the notebook: acquisition, verification, preprocessing, shared splits,
-three PyTorch models, training, checkpoint loading, evaluation, PCA, and a demo.
-It does not import the earlier standalone inspection scripts, which are preserved.
-References and any synced `sources/` directory remain read-only.
+This project reproduces the paper *Latent Feature Extraction for Musical Genres from Raw Audio* (Sawhney,
+Vasavada & Wang, NIPS 2018 workshop; [references/musical_genre.pdf](references/musical_genre.pdf)). It then builds
+improved models on top of it. Everything runs in one notebook:
+[musical_genre_paper_reproduction.ipynb](musical_genre_paper_reproduction.ipynb).
 
-[musical_genre_paper_reproduction.ipynb](musical_genre_paper_reproduction.ipynb) contains both parts of the project:
-- **Part 1 — Paper reproduction.** It follows the paper text first, uses the authors' linked code only where the
-  paper gives no value, and documents the source of every setting. Outputs go to `artifacts/paper_reproduction/`.
-- **Part 2 — Improvements.** Fixed, wider-input, convolutional (raw audio) and mel-spectrogram Deep Softmax
-  Autoencoders, each evaluated over 5 seeds on the paper's clip split and on a song-disjoint split. It ends with one
-  comparison table for all models. Trained models and results are cached in `artifacts/improvements/`.
+For a plain-language walkthrough of everything we did and found, read **[summary.md](summary.md)**.
 
-Run All takes about 4 minutes when the Part 2 cache exists. With an empty cache, or with `RETRAIN = True`, training
-Part 2 from scratch takes about 2–3 hours on a laptop CPU.
+## What is in the notebook
 
-## Start the notebook in VS Code
+**Part 1: paper reproduction.** The notebook rebuilds the paper's method: GTZAN audio (classical, jazz, metal, pop),
+20,000-sample segments average-pooled to 500 values, a random 6,000/1,000/1,000 split, and the paper's three models:
+- a two-layer neural network;
+- a vanilla autoencoder;
+- the Deep Softmax Autoencoder.
+
+It then recreates the paper's Tables 1–2 and Figures 1, 3, 4, 5 and 6. Where the paper gives no value, the
+authors' linked code is used, and the first cell lists the source of every setting. An appendix compares our numbers
+with the paper's and tests why they differ.
+
+**Part 2: improvements.** Four models are built on top of the reproduction, one change at a time:
+1. the paper's model with its bugs fixed;
+2. the same model with more of the audio signal;
+3. a convolutional Deep Softmax Autoencoder on raw audio, our main contribution;
+4. a mel-spectrogram Deep Softmax Autoencoder, as an extra.
+
+Every model runs with 5 seeds on two splits:
+- the **clip split** is the paper's random split, used to compare with the paper;
+- the **song split** puts no song in more than one partition, to test on unseen songs.
+
+All settings are chosen on the dev set. Part 2 ends with one comparison table covering every model.
+
+### Headline results (test accuracy, mean ± std over 5 seeds)
+
+| Model | Clip split | Song split |
+|---|---|---|
+| Paper, Deep Softmax AE (quoted from the PDF) | 65.3% | not reported |
+| Our reproduction of the paper's Deep Softmax AE | 61.0% ± 2.2% | 58.4% ± 3.1% |
+| Convolutional Deep Softmax AE, raw audio (Step 3) | 87.2% ± 1.7% | 83.2% ± 2.9% |
+| Mel-spectrogram Deep Softmax AE (Step 4, extra) | 97.7% ± 0.8% | 94.5% ± 2.9% |
+
+## Setup
+
+Requires Python 3.12 or newer. Tested on Python 3.14.6, macOS arm64, CPU only.
 
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-notebook.txt
 ```
 
-Open the notebook and select `.venv/bin/python` as the kernel (Windows:
-`.venv\Scripts\python.exe`). Run cells in order. Dependencies can also be installed
-from the package list inside the notebook; the requirements file is optional.
+Open the notebook in VS Code (or Jupyter) and select `.venv/bin/python` as the kernel. On Windows use
+`.venv\Scripts\python.exe`.
 
-The default `CFG["mode"] = "smoke"` runs one epoch per model on 256 training and
-128 validation examples, checks the complete workflow, and leaves test unevaluated.
-These are real executed diagnostics, **not full reproduction results**. To train
-the full experiments use `mode="full"` (200 baseline, 400 AE, 200 joint epochs).
-Keep `evaluate_test=False` until choices are fixed; then set it true and rerun
-with checkpoint reuse enabled. Full runs and smoke runs use separate directories.
+## Dataset
 
-The default dataset is the separately preserved AU archive in
-`data/raw/gtzan_qiuqiangkong/`: **1,000/1,000 recordings decode, including all
-400 selected recordings**. Download/source links, checksums and the comparison
-with the earlier failed WAV mirror are in the notebook and
-[dataset provenance](docs/dataset.md). It creates 8,000 × 500 inputs and preserves
-recording/segment metadata and split indices. Caches, checkpoints and figures go
-under Git-ignored `artifacts/notebook/`.
+The notebook uses the GTZAN Genre Collection: 1,000 thirty-second clips in 10 genres, of which only 4 are used.
+If the audio is not already at `data/raw/gtzan_qiuqiangkong/genres/<genre>/`, the first data cell does the
+following:
+1. downloads the archive (about 1.2 GB) from a pinned Hugging Face mirror;
+2. checks its SHA-256;
+3. extracts the four genres;
+4. converts the files to `.wav` in `data/interim/gtzan_wav/`, as the paper did.
 
-## Earlier standalone inspection setup (optional)
+Provenance, checksums and the audit of the dataset are in [docs/dataset.md](docs/dataset.md). The audio is not
+committed to the repository.
 
-Run from the repository root. Python 3.12+ is required by the extraction script;
-the executed inspection environment is Python 3.14.6 on macOS arm64. The minimal
-dependencies are pinned; this is not yet a validated training environment.
+## Running
 
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-inspect.txt
-.venv/bin/python -m pip check
-```
+Use **Run All**. How long it takes depends on whether the Part 2 cache exists:
 
-Expected: imports for NumPy/SoundFile work and pip reports no broken requirements.
-Audio remains in its native format, sample rate, and channel count during inspection.
+| Situation | Time on a laptop CPU |
+|---|---|
+| Part 2 cache present (`artifacts/improvements/`) | about 4 minutes |
+| No cache, or `RETRAIN = True` in the first Part 2 cell | about 2–3 hours |
 
-## Earlier WAV mirror acquisition (optional; known unreadable file)
+Part 1 always retrains, which takes about 1 minute, plus about 3 minutes for the appendix experiments. Part 2
+caches every trained model and result under a key built from its full configuration, so changing a setting
+retrains only what changed. The `artifacts/` folder is Git-ignored, so a fresh clone trains Part 2 once.
 
-Source: [Marsyas GTZAN audio mirror on Hugging Face](https://huggingface.co/datasets/marsyas/gtzan).
-This is the Genre Collection audio archive. No Hugging Face login or dataset loader
-is needed. The mirror does not specify an audio license; see
-[dataset provenance](docs/dataset.md) for attribution, checksum and verification.
+The last cell of the notebook is a demo. It plays a held-out test clip and shows the best model's predicted genre
+probabilities. Change `DEMO_INDEX` to try another clip.
 
-For a new or interrupted download (about 1.23 GB compressed):
+## Outputs
 
-```bash
-mkdir -p data/downloads data/raw/gtzan
-curl -L --fail --continue-at - --retry 5 \
-  --output data/downloads/genres.tar.gz.part \
-  'https://huggingface.co/datasets/marsyas/gtzan/resolve/d2146561ecc7df707d9e6b8318885fe6a39668a2/data/genres.tar.gz?download=true'
-.venv/bin/python scripts/extract_gtzan.py
-```
+| Folder | Contents |
+|---|---|
+| `artifacts/paper_reproduction/` | Part 1 models, training histories, Figures 1/3/4/5/6, `results.json` |
+| `artifacts/improvements/` | Part 2 cached models, histories and results; comparison chart; best-model confusion matrix and PCA |
 
-The extractor verifies size and SHA-256, rejects unsafe paths and links, refuses
-to overwrite differing raw files, and renames the verified `.part` archive to
-`genres.tar.gz`. Expected checksum:
-`b28cc067ff6199bd826f5d1a6931458586d64acae7f44b2e882b7a97af057531`.
-Extracted audio is under `data/raw/gtzan/genres/<genre>/`.
+## Repository layout
 
-If the archive already exists, skip downloading and use:
+| Path | What it is |
+|---|---|
+| `musical_genre_paper_reproduction.ipynb` | the whole project: reproduction, improvements, comparison, demo |
+| `summary.md` | plain-language summary of the work and the results |
+| `plan.md` | project plan, decisions and the improvement plan |
+| `docs/reference_audit.md` | where the paper, poster and authors' code disagree |
+| `docs/dataset.md` | dataset sources, checksums and audit results |
+| `references/` | the paper, poster and assignment guidelines (read-only) |
+| `scripts/`, `tests/`, `requirements-inspect.txt` | earlier standalone dataset-inspection tools (optional; the notebook does not use them) |
+| `data/metadata/` | lightweight dataset inventories produced by those tools |
 
-```bash
-.venv/bin/python scripts/extract_gtzan.py --archive data/downloads/genres.tar.gz
-```
+## Attribution
 
-Existing identical files are retained. If downloading manually, save the pinned
-URL above as `data/downloads/genres.tar.gz` and run that command. If using an
-existing dataset elsewhere, pass its directory to `--root` below; do not copy
-feature CSVs or spectrogram images as substitutes for audio.
-
-## Verify the earlier WAV mirror
-
-```bash
-.venv/bin/python scripts/inventory_gtzan.py \
-  --root data/raw/gtzan --output-dir data/metadata
-.venv/bin/python -m unittest discover -s tests -v
-```
-
-The inventory reads every recording to the end. It produces:
-
-- `data/metadata/gtzan_inventory.csv`: paths, stable recording IDs, genres,
-  headers, full-decode status, durations, file hashes and amplitude statistics.
-- `data/metadata/gtzan_summary.json`: actual counts, missing/duplicate IDs,
-  failures, advisory anomalies, decoder versions and archive metadata files.
-- `data/metadata/gtzan_waveforms.svg`: native raw waveform previews for one
-  recording in each selected genre; this is inspection, not training segmentation.
-
-An exit code of 2 means verification found a hard issue, while preserving the
-full manifest. **This downloaded mirror is expected to exit 2**: 1,000 recording
-files exist, but `jazz.00054.wav` fails decoding. The selected four genres contain
-400 recording files and 399 currently decodable recordings. No file has been
-excluded, repaired, or replaced. Review [dataset status](docs/dataset.md) before
-preprocessing; do not treat the failure as a successful 400-recording audit.
-
-Raw audio, archives, `.venv`, caches and large generated artifacts are Git-ignored.
-Keep code, requirements, documentation and lightweight manifests in Git. Do not
-publish the dataset with the source repository. Repository privacy and faculty
-access remain to be verified as required by the assignment.
-
-## Reproduction policy and remaining work
-
-The user approved twenty consecutive 20,000-sample chunks per recording, pooled
-in groups of 40. At 22,050 Hz these are approximately 0.907-second clips, an
-explicit interpretation based on author code. The complete notebook now implements
-this approved policy and uses the fully readable AU source. Main split sizes and
-loss/dropout settings follow the paper; source-code conflicts are documented.
-Full experimental training/test evaluation, human review, the final PDF/slides,
-faculty repository access, and demonstration rehearsal remain outstanding. The
-assignment's one-page/two-page contradiction still needs faculty clarification.
+GTZAN was created by George Tzanetakis and collaborators (Tzanetakis & Cook, *Musical Genre Classification of
+Audio Signals*, IEEE TSAP 2002). The paper and its code ([arjunsawknee/Genre-Extraction](https://github.com/arjunsawknee/Genre-Extraction))
+belong to their authors; this repository reimplements the method in PyTorch and does not copy their code.
