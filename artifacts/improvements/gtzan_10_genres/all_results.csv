@@ -1,0 +1,61 @@
+name,data,kind,seed,extra,paper_settings,train_accuracy,dev_accuracy,test_accuracy,test_macro_f1,test_song_accuracy,test_songs,best_epoch,seconds,model,gamma,max_epochs,lr,batch,patience,epochs_run,training_device,torch_version,gpu_name
+paper_nn,pool40_paper,clip,0,False,True,0.28386666666666666,0.182,0.1752,0.1689433144219905,0.19893048128342247,935,200,4.7,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,clip,1,False,True,0.28,0.1792,0.1816,0.17834519571034496,0.18308351177730192,934,200,4.1,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,clip,2,False,True,0.2834,0.1756,0.1672,0.16611116593213868,0.18338727076591155,927,200,4.0,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,clip,3,False,True,0.28373333333333334,0.1808,0.1592,0.16025235537199065,0.17597471022128555,949,200,4.1,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,clip,4,False,True,0.2786,0.1736,0.1708,0.16955099749704233,0.19073275862068967,928,200,4.1,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,song,0,False,True,0.27475,0.185,0.2035,0.19214385950509155,0.21,100,200,4.1,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,song,1,False,True,0.270125,0.184,0.176,0.17543148204056838,0.28,100,200,4.0,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,song,2,False,True,0.2775625,0.1865,0.1635,0.16140584066339103,0.18,100,200,4.0,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,song,3,False,True,0.2750625,0.2,0.146,0.14689198357093208,0.17,100,200,4.0,Paper two-layer NN,,,,,,,,,
+paper_nn,pool40_paper,song,4,False,True,0.2746875,0.177,0.169,0.16270644609073898,0.25,100,200,4.1,Paper two-layer NN,,,,,,,,,
+paper_dsae,pool40_paper,clip,0,False,True,0.7349333333333333,0.28,0.2852,0.2790403736023651,0.3251336898395722,935,500,55.9,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,clip,1,False,True,0.7626666666666667,0.2788,0.2876,0.2777141156862635,0.31049250535331907,934,500,58.5,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,clip,2,False,True,0.7702,0.2948,0.2624,0.25717341903252205,0.3063646170442287,927,500,58.4,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,clip,3,False,True,0.7752,0.3132,0.2812,0.27355654550752406,0.3287671232876712,949,500,60.2,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,clip,4,False,True,0.7372,0.2728,0.2828,0.27855388896239286,0.32004310344827586,928,500,60.0,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,song,0,False,True,0.74125,0.271,0.3005,0.29001100822510545,0.45,100,500,60.5,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,song,1,False,True,0.749375,0.2685,0.2845,0.2721447011796197,0.44,100,500,62.7,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,song,2,False,True,0.7734375,0.2695,0.268,0.2555163969485821,0.35,100,500,61.1,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,song,3,False,True,0.781375,0.264,0.2505,0.24554445385582993,0.38,100,500,59.1,Paper Deep Softmax AE,,,,,,,,,
+paper_dsae,pool40_paper,song,4,False,True,0.7466875,0.2765,0.2635,0.25649257607190457,0.36,100,500,58.9,Paper Deep Softmax AE,,,,,,,,,
+step1,pool40_paper,clip,0,False,,0.9168666666666667,0.3096,0.2728,0.2673562664242033,0.3176470588235294,935,189,27.9,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,239.0,,,
+step1,pool40_paper,clip,1,False,,0.9407333333333333,0.2904,0.2756,0.26712058025098157,0.2965738758029979,934,192,27.7,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,242.0,,,
+step1,pool40_paper,clip,2,False,,0.869,0.3064,0.2788,0.272086830467783,0.31283710895361383,927,141,22.0,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,191.0,,,
+step1,pool40_paper,clip,3,False,,0.6699333333333334,0.3016,0.2744,0.2650165118731235,0.3150684931506849,949,82,15.6,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,132.0,,,
+step1,pool40_paper,clip,4,False,,0.9705333333333334,0.2984,0.28,0.27672551366827997,0.30064655172413796,928,311,41.2,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,361.0,,,
+step1,pool40_paper,song,0,False,,0.5714375,0.28,0.2825,0.2681717893943638,0.34,100,61,13.7,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,111.0,,,
+step1,pool40_paper,song,1,False,,0.6343125,0.281,0.2695,0.2508313407764811,0.36,100,69,15.2,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,119.0,,,
+step1,pool40_paper,song,2,False,,0.803375,0.2915,0.2725,0.2588387205898811,0.37,100,119,22.1,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,169.0,,,
+step1,pool40_paper,song,3,False,,0.5834375,0.293,0.2385,0.22467418980131057,0.3,100,59,13.6,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,109.0,,,
+step1,pool40_paper,song,4,False,,0.8385,0.289,0.2675,0.25828473061731533,0.43,100,130,21.9,Step 1: fixed Deep Softmax AE,0.1,500.0,0.0001,512.0,50.0,180.0,,,
+step2,pool40_all,clip,0,True,,0.7181071428571428,0.3112,0.3028,0.2923340099554391,0.3443850267379679,935,104,34.5,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,154.0,,,
+step2,pool40_all,clip,1,True,,0.857,0.3128,0.3132,0.30721245892870414,0.35653104925053536,934,159,51.9,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,209.0,,,
+step2,pool40_all,clip,2,True,,0.8808214285714285,0.3272,0.296,0.2900703010319742,0.3451995685005394,927,189,53.9,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,239.0,,,
+step2,pool40_all,clip,3,True,,0.7657857142857143,0.322,0.3,0.2932748497269694,0.36143308746048475,949,123,39.9,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,173.0,,,
+step2,pool40_all,clip,4,True,,0.7042142857142857,0.32,0.296,0.29250816789643097,0.3480603448275862,928,97,31.4,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,147.0,,,
+step2,pool40_all,song,0,True,,0.786439393939394,0.284,0.318,0.30740132370675777,0.38,100,127,36.4,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,177.0,,,
+step2,pool40_all,song,1,True,,0.8093181818181818,0.31,0.305,0.2959256438806868,0.5,100,138,51.9,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,188.0,,,
+step2,pool40_all,song,2,True,,0.5421590909090909,0.299,0.2815,0.26309128250799385,0.31,100,56,27.7,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,106.0,,,
+step2,pool40_all,song,3,True,,0.6989772727272727,0.3125,0.27,0.2653761417397947,0.29,100,87,35.0,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,137.0,,,
+step2,pool40_all,song,4,True,,0.6439393939393939,0.3085,0.285,0.2727594885059519,0.38,100,68,26.6,Step 2: + more signal,0.1,500.0,0.0001,512.0,50.0,118.0,,,
+step3,pool4_all,clip,0,True,,0.9168214285714286,0.7232,0.72,0.7186871406371609,0.7935828877005348,935,18,767.7,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,26.0,,,
+step3,pool4_all,clip,1,True,,0.9444642857142858,0.7332,0.7152,0.713752181905136,0.7955032119914347,934,24,2468.5,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,32.0,,,
+step3,pool4_all,clip,2,True,,0.8878928571428572,0.7144,0.674,0.6732278249351094,0.7389428263214671,927,15,972.6,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,23.0,,,
+step3,pool4_all,clip,3,True,,0.9691785714285714,0.7264,0.7136,0.7123899578631832,0.804004214963119,949,32,1122.0,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,40.0,,,
+step3,pool4_all,clip,4,True,,0.9334642857142857,0.7204,0.7068,0.7065705172255685,0.7586206896551724,928,20,145.4,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,28.0,cuda,2.11.0+cu130,Tesla T4
+step3,pool4_all,song,0,True,,0.9193181818181818,0.628,0.6435,0.6382813881800814,0.75,100,20,135.4,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,28.0,cuda,2.11.0+cu130,Tesla T4
+step3,pool4_all,song,1,True,,0.8448106060606061,0.6445,0.617,0.6100722935497676,0.83,100,13,103.4,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,21.0,cuda,2.11.0+cu130,Tesla T4
+step3,pool4_all,song,2,True,,0.9475757575757576,0.603,0.6085,0.607369163797244,0.74,100,22,145.1,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,30.0,cuda,2.11.0+cu130,Tesla T4
+step3,pool4_all,song,3,True,,0.8626515151515152,0.5985,0.59,0.5913798935511696,0.69,100,13,103.1,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,21.0,cuda,2.11.0+cu130,Tesla T4
+step3,pool4_all,song,4,True,,0.9359469696969697,0.5905,0.601,0.5978367832813892,0.73,100,20,135.5,Step 3: Conv Deep Softmax AE (raw audio),0.1,40.0,0.001,64.0,8.0,28.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,clip,0,True,,0.9872142857142857,0.884,0.8764,0.8762155559252127,0.9336898395721925,935,22,170.6,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,30.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,clip,1,True,,0.9821071428571428,0.8708,0.8684,0.8672851240929127,0.9261241970021413,934,21,165.1,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,29.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,clip,2,True,,0.98775,0.8812,0.8736,0.8744825352602325,0.9320388349514563,927,23,176.0,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,31.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,clip,3,True,,0.983,0.8812,0.8844,0.8849797186295432,0.9388830347734457,949,17,142.8,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,25.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,clip,4,True,,0.9873571428571428,0.8724,0.8644,0.8641580652681814,0.9170258620689655,928,35,226.4,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,40.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,song,0,True,,0.9735984848484849,0.79,0.8035,0.7972906994019824,0.88,100,15,123.5,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,23.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,song,1,True,,0.9622727272727273,0.7635,0.7635,0.760006107579579,0.85,100,13,113.1,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,21.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,song,2,True,,0.8453030303030303,0.7625,0.6635,0.6632963193817649,0.74,100,5,71.6,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,13.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,song,3,True,,0.9718560606060606,0.769,0.748,0.7500527724814128,0.88,100,13,113.1,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,21.0,cuda,2.11.0+cu130,Tesla T4
+step4,mel_all,song,4,True,,0.8553030303030303,0.722,0.689,0.6830335591241289,0.78,100,5,71.4,Step 4: Mel Deep Softmax AE (extra),0.1,40.0,0.001,64.0,8.0,13.0,cuda,2.11.0+cu130,Tesla T4

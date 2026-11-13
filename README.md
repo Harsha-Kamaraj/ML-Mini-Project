@@ -15,7 +15,9 @@ experiments ran on a Tesla T4. Results and checkpoints are stored separately fro
 
 Read **[Project_Writeup.pdf](Project_Writeup.pdf)** for the updated two-page project writeup,
 or edit **[Project_Writeup.docx](Project_Writeup.docx)** in Word.
-The **[editable PowerPoint](Musical_Genre_Classification_Final_10_Genres.pptx)** presents the same ten-genre experiment.
+The slide deck, **[Musical_Genre_Classification_Final_10_Genres.pdf](Musical_Genre_Classification_Final_10_Genres.pdf)**,
+presents the same ten-genre experiment; an
+**[editable PowerPoint](Musical_Genre_Classification_Final_10_Genres.pptx)** version is also included.
 
 ## View or rerun the final results
 
@@ -30,8 +32,9 @@ The **[editable PowerPoint](Musical_Genre_Classification_Final_10_Genres.pptx)**
 
 Keep both `artifacts/paper_reproduction/gtzan_10_genres/` and
 `artifacts/improvements/gtzan_10_genres/` to reuse the completed run. A missing cache entry starts training
-for that experiment. The `artifacts/` and audio folders are Git-ignored and must be copied separately when
-moving the project to another computer or Colab.
+for that experiment. Model checkpoints, training histories and audio are Git-ignored and must be copied
+separately when moving the project to another computer or Colab; only the final summary tables and figures
+are committed (see **Outputs**).
 
 ## What is in the notebook
 
@@ -91,7 +94,7 @@ Complete metrics are in
 [comparison.csv](artifacts/improvements/gtzan_10_genres/comparison.csv) and
 [all_results.csv](artifacts/improvements/gtzan_10_genres/all_results.csv).
 The [comparison chart](artifacts/improvements/gtzan_10_genres/comparison_test_accuracy.png) shows the same
-six classifiers. These links work when the local artifact folders are present.
+six classifiers. These summary files are committed to the repository.
 
 ### Historical four-genre results (test accuracy, mean ± std over 5 seeds)
 
@@ -117,6 +120,17 @@ python3.14 -m venv .venv
 
 Open the notebook in VS Code (or Jupyter) and select `.venv/bin/python` as the kernel. On Windows use
 `.venv\Scripts\python.exe`.
+
+### Running the tests
+
+The tests use Python's built-in `unittest`, so no extra packages are needed beyond the notebook requirements:
+
+```bash
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+They take a few seconds and do not train full models. The CUDA checkpoint-portability test is skipped
+automatically on machines without a CUDA GPU (e.g. a Mac).
 
 The GPU continuation used **Python 3.13.15, PyTorch 2.11.0+cu130, CUDA 13.0, LibROSA 0.11.0 and a Tesla T4**.
 Its full package versions are recorded in
@@ -187,7 +201,10 @@ experiment settings.
 | `artifacts/paper_reproduction/gtzan_10_genres/` | Part 1 models, training histories, Figures 3/4/5, `results.json` |
 | `artifacts/improvements/gtzan_10_genres/` | Part 2 cached models, dataset configuration, histories, `all_results.csv`, `comparison.csv`, comparison chart, best-model confusion matrix and PCA |
 
-The earlier four-genre artifacts remain in the parent folders.
+Only the final summary outputs are committed: `all_results.csv`, `comparison.csv`, the comparison chart,
+the best-model confusion matrix and PCA plot, `colab_environment.json`, and Figures 3/4/5. Model weights,
+training histories, `results.json` and the per-experiment cache files stay local, because the notebook
+reads them to decide what to reuse. The earlier four-genre artifacts remain local in the parent folders.
 
 ## Repository layout
 
@@ -196,6 +213,7 @@ The earlier four-genre artifacts remain in the parent folders.
 | `musical_genre_classification.ipynb` | **Final notebook:** all models, ten-genre results, plots and demo; CPU/GPU support and completed-result reuse |
 | `Project_Writeup.pdf` | updated two-page writeup of the full ten-genre experiment |
 | `Project_Writeup.docx` | editable Word version of the two-page writeup, with an editable results table and chart |
+| `Musical_Genre_Classification_Final_10_Genres.pdf` | final 13-slide presentation used for the review |
 | `Musical_Genre_Classification_Final_10_Genres.pptx` | editable presentation using the reference deck's colours, fonts and format |
 | `musical_genre_paper_reproduction.ipynb` | earlier CPU implementation; retained as a reference for architecture checks |
 | `docs/reference_audit.md` | where the paper, poster and authors' code disagree |

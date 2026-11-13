@@ -1,0 +1,13 @@
+split,model,train acc,dev acc,test acc,test macro-F1,test song acc
+clip,Paper two-layer NN,28.2% ± 0.2%,17.8% ± 0.4%,17.1% ± 0.8%,16.9% ± 0.7%,18.6% ± 0.9%
+clip,Paper Deep Softmax AE,75.6% ± 1.9%,28.8% ± 1.6%,28.0% ± 1.0%,27.3% ± 0.9%,31.8% ± 1.0%
+clip,Step 1: fixed Deep Softmax AE,87.3% ± 12.0%,30.1% ± 0.7%,27.6% ± 0.3%,27.0% ± 0.5%,30.9% ± 0.9%
+clip,Step 2: + more signal,78.5% ± 8.0%,31.9% ± 0.7%,30.2% ± 0.7%,29.5% ± 0.7%,35.1% ± 0.8%
+clip,Step 3: Conv Deep Softmax AE (raw audio),93.0% ± 3.0%,72.4% ± 0.7%,70.6% ± 1.8%,70.5% ± 1.8%,77.8% ± 2.8%
+clip,Step 4: Mel Deep Softmax AE (extra),98.5% ± 0.3%,87.8% ± 0.6%,87.3% ± 0.8%,87.3% ± 0.8%,93.0% ± 0.8%
+song,Paper two-layer NN,27.4% ± 0.3%,18.7% ± 0.8%,17.2% ± 2.1%,16.8% ± 1.7%,21.8% ± 4.7%
+song,Paper Deep Softmax AE,75.8% ± 1.8%,27.0% ± 0.5%,27.3% ± 1.9%,26.4% ± 1.7%,39.6% ± 4.6%
+song,Step 1: fixed Deep Softmax AE,68.6% ± 12.6%,28.7% ± 0.6%,26.6% ± 1.6%,25.2% ± 1.7%,36.0% ± 4.7%
+song,Step 2: + more signal,69.6% ± 10.9%,30.3% ± 1.2%,29.2% ± 1.9%,28.1% ± 2.0%,37.2% ± 8.2%
+song,Step 3: Conv Deep Softmax AE (raw audio),90.2% ± 4.6%,61.3% ± 2.3%,61.2% ± 2.0%,60.9% ± 1.8%,74.8% ± 5.1%
+song,Step 4: Mel Deep Softmax AE (extra),92.2% ± 6.5%,76.1% ± 2.5%,73.4% ± 5.7%,73.1% ± 5.6%,82.6% ± 6.3%

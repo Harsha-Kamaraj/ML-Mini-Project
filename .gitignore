@@ -28,7 +28,18 @@ __pycache__/
 tmp/
 
 # Large experiment artifacts; keep curated metrics/configuration separately.
-artifacts/
+artifacts/**
+!artifacts/**/
+# ...except the final ten-genre summary results and figures (outputs only; never read back as cache).
+!artifacts/improvements/gtzan_10_genres/all_results.csv
+!artifacts/improvements/gtzan_10_genres/comparison.csv
+!artifacts/improvements/gtzan_10_genres/comparison_test_accuracy.png
+!artifacts/improvements/gtzan_10_genres/best_confusion_matrix.png
+!artifacts/improvements/gtzan_10_genres/best_pca.png
+!artifacts/improvements/gtzan_10_genres/colab_environment.json
+!artifacts/paper_reproduction/gtzan_10_genres/figure3_accuracy_curves.png
+!artifacts/paper_reproduction/gtzan_10_genres/figure4_confusion_matrix.png
+!artifacts/paper_reproduction/gtzan_10_genres/figure5_pca_bottleneck.png
 checkpoints/
 runs/
 *.pt
